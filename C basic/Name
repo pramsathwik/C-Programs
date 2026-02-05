@@ -1,0 +1,6 @@
+#include<stdio.h>
+int main(){
+    printf("Manoj\n");
+    printf("Ram");
+    return 0;
+}
