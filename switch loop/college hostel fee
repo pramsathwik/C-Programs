@@ -1,0 +1,22 @@
+#include<stdio.h>
+int main()
+{
+    int roomtype,hostelfee;
+    scanf("%d",&roomtype);
+    switch(roomtype)
+    {
+        case 1:
+        hostelfee = 80000;
+        break;
+        case 2:
+        hostelfee = 60000;
+        break;
+        case 3:
+        hostelfee = 45000;
+        break;
+    default:
+    printf("Invalid roomtype");
+    }
+    printf("₹ %d",hostelfee);
+    return 0;
+}
