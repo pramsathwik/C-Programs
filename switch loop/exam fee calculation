@@ -1,0 +1,22 @@
+#include<stdio.h>
+int main()
+{
+    int category,ammount = 0;
+    scanf("%d",&category);
+    switch(category)
+    {
+        case 1:
+        ammount = 1200;
+        break;
+        case 2:
+        ammount = 800;
+        break;
+        case 3:
+        ammount = 500;
+        break;
+        default:
+        printf("Invalid category");
+    }
+    printf("%d",ammount);
+    return 0;
+}
