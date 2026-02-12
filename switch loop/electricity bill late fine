@@ -1,0 +1,24 @@
+#include<stdio.h>
+int main()
+{
+    int delaydays,ammount = 0;
+    scanf("%d",&delaydays);
+    switch(delaydays <= 5)
+    {
+        case 1:
+        ammount = delaydays * 50;
+        break;
+        case 0:
+        switch(delaydays <= 10){
+            case 1:
+            ammount = delaydays * 100;
+            break;
+            case 0:
+            ammount = delaydays * 200; 
+            break;
+        }
+        break;
+    }
+    printf("₹ %d",ammount);
+    return 0;
+}
