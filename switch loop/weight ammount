@@ -1,0 +1,24 @@
+#include<stdio.h>
+int main()
+{
+    int flightclass,weight,ammount;
+    scanf("%d %d",&flightclass,&weight);
+    switch(flightclass)
+    {
+        case 1:
+        ammount = weight * 300;
+        printf("₹%d",ammount);
+        break;
+        case 2:
+        if(weight<=3)
+        printf("Free");
+        else{
+            ammount = (weight - 3) * 300;
+            printf("₹%d",ammount);
+        }
+        break;
+        default :
+        printf("Invalid flight class");
+    }
+    return 0;
+}
