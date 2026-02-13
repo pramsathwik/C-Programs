@@ -1,0 +1,20 @@
+#include<stdio.h>
+int main()
+{
+    int vehicletype,hour,rate,ammount = 0;
+    scanf("%d %d",&vehicletype,&hour);
+    switch(vehicletype)
+    {
+        case 1:
+        rate = 10;
+        break;
+        case 2:
+        rate = 20;
+        break;
+    default:
+    rate = 20;
+    }
+    ammount = rate * hour;
+    printf("₹%d",ammount);
+    return 0;
+}
