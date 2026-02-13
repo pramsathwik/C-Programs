@@ -1,0 +1,23 @@
+
+#include<stdio.h>
+int main()
+{
+    int hours;
+    scanf("%d",&hours);
+    switch(hours <= 1){
+        case 1:
+        printf("short interruption");
+        break;
+        case 0:
+        switch(hours <= 4){
+            case 1:
+            printf("medium interruption");
+            break;
+            case 0:
+            printf("long interruption");
+            break;
+        }
+        break;
+    }
+    return 0;
+}
