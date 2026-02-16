@@ -1,0 +1,22 @@
+#include<stdio.h>
+int main()
+{
+    int durationtype,fee = 0;
+    scanf("%d",&durationtype);
+    switch(durationtype)
+    {
+        case 1:
+        fee = 1500;
+        break;
+        case 2:
+        fee = 4000;
+        break;
+        case 3:
+        fee = 6000;
+        break;
+        default:
+        printf("Invalid duration type");
+    }
+    printf("₹ %d",fee);
+    return 0;
+}GYM
