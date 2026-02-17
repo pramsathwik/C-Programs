@@ -1,0 +1,22 @@
+#include<stdio.h>
+int main()
+{
+    int violationtype,fine = 0;
+    scanf("%d",&violationtype);
+    switch(violationtype)
+    {
+        case 1:   //no helmet
+        fine = 1000;
+        break;
+        case 2:     //signal jump
+        fine = 1500;
+        break;
+        case 3:     //over speeding
+        fine = 2000;
+        break;
+        default:
+        printf("Invalid violation Type");
+    }
+    printf("₹ %d",fine);
+    return 0;
+}
