@@ -1,0 +1,24 @@
+#include<stdio.h>
+int main()
+{
+    int warrantycategory;
+    scanf("%d",&warrantycategory);
+    switch(warrantycategory)
+    {
+        case 1:
+        if(warrantycategory >= 1)
+        printf("under warranty");
+        break;
+        case 2:
+        if(warrantycategory > 1 && warrantycategory  <= 2)
+        printf("limited warranty");
+        break;
+        case 3:
+        if(warrantycategory > 2)
+        printf("out of warranty");
+        break;
+        default:
+        printf("Invalid warranty category");
+    }
+    return 0;
+}
