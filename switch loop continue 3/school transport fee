@@ -1,0 +1,24 @@
+#include<stdio.h>
+int main()
+{
+    int distancecategory,transportfee = 0;
+    scanf("%d",&distancecategory);
+    switch(distancecategory)
+    {
+        case 1:
+        if(distancecategory <= 5)
+        transportfee = 800;
+        break;
+        case 2:
+        if(distancecategory >= 6 && distancecategory <= 10)
+        transportfee = 1200;
+        break;
+        if(distancecategory > 10)
+        transportfee = 1800;
+        break;
+        default:
+        printf("Invalid distance category");
+    }
+    printf("₹ %d",transportfee);
+    return 0;
+}
