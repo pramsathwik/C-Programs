@@ -1,19 +1,14 @@
-#include<stdio.h>
-int main()
-{
+#include <stdio.h>
+int main() {
     int a;
     scanf("%d",&a);
-    if(a>0)
+    if(a>n)
     {
         printf("positive");
     }
-    else if(a<0)
-    {
-        printf("negative");
-    }
     else
     {
-        printf("zero");
+        printf("negative");
     }
     return 0;
 }
