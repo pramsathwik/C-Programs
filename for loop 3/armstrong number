@@ -1,0 +1,25 @@
+#include <stdio.h>
+int main()
+{
+    int N,original,digits = 0,i,temp,digit;
+    int power, sum = 0;
+    scanf("%d", &N);
+    original = N;
+    temp = N;
+    for(; temp > 0; temp = temp / 10)
+        digits++;
+    temp = N;
+    for(; temp > 0; temp = temp / 10)
+    {
+        digit = temp % 10;
+        power = 1;
+        for(i = 1; i <= digits; i++)
+            power = power * digit;
+        sum = sum + power;
+    }
+    if(sum == original)
+        printf("Yes");
+    else
+        printf("No");
+    return 0;
+}
