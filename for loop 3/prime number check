@@ -1,0 +1,20 @@
+#include <stdio.h>
+int main()
+{
+    int N,i,Prime = 1;
+    scanf("%d", &N);
+    for(i = 2; i < N; i++)
+    {
+        if(N % i == 0)
+        {
+            Prime = 0;
+            break;
+        }
+    }
+    if(Prime == 1)
+        printf("Prime");
+    else
+        printf("Not Prime");
+
+    return 0;
+}
